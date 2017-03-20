@@ -9,6 +9,8 @@ require "rubygems"
 require "bundler/setup"
 require "newrelic_plugin"
 
+Dir.chdir File.dirname(__FILE__)
+
 module INodeAgent
   class Agent < NewRelic::Plugin::Agent::Base
 
